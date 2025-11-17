@@ -2,12 +2,11 @@ package com.bvd.java_fundamentals;
 
 import com.bvd.java_fundamentals.model.Order;
 
+import java.io.File;
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /*
  * Implement the methods below so that the requirements are met.
@@ -19,8 +18,10 @@ public class OrderUtil {
 
     // retrieve orders from csv lines
     public static List<Order> parseCsvLines(final List<String> lines) {
-        // Write your code here and replace the return statement
-        return Collections.emptyList();
+        return lines.stream().filter().limit(7).collect(Collectors.toList());
+
+
+
     }
 
     // calculate revenue by day
