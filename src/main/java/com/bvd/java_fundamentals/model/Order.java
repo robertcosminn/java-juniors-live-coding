@@ -34,7 +34,32 @@ public class Order {
 
     }
 
+    public Date getOrderDate() {
+        return orderDate;
+    }
 
+    public int getOrderId() {
+        return orderId;
+    }
 
+    public int getCustomerId() {
+        return customerId;
+    }
+
+    public BigDecimal getUnitPrice() {
+        return unitPrice;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
 
 }
